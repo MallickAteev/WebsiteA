@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ateev Mallick</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        body {
+          background-color: rgb(20, 41, 55);
+          color: white;
+          font-family: "Poppins", sans-serif;
+        }
+        nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 80px;
+          background-color: rgb(45, 100, 95);
+          z-index: 1000;
+        }
+        nav .left a{
+          text-decoration: none;
+          color:white;
+        }
+        nav .left a:hover{
+          color: rgb(30, 121, 94);
+        }
+
+        nav ul {
+          display: flex;
+          justify-content: center;
+        }
+        nav ul li {
+          list-style: none;
+          margin: 0 23px;
+        }
+        nav ul li a {
+          text-decoration: none;
+          color: white;
+        }
+        nav ul li a:hover {
+          color: rgb(30, 121, 94);
+          font-size: 1.04rem;
+        }
+        main {
+          padding-top: 100px;
+        }
+
+        main hr {
+          border: 0;
+          background-color: aqua;
+          height: 1px;
+          margin: 60px 80px;
+        }
+        .left {
+          font-size: 1.7rem;
+          font-weight: 600;
+        }
+        .HomeSection {
+          height: 120vh;
+        }
+        .HomeSection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Styling for the button container */
+        .button {
+            display: flex;
+            gap: 20px; /* Space between buttons */
+        }
+
+        /* Button styling */
+        .button-text {
+            padding: 15px 30px;
+            background-color: white;
+            color: #4a90e2;
+            border: 2px solid #4a90e2;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            outline: none;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        /* Hover effects */
+        .button-text:hover {
+            background-color: #4a90e2;
+            color: white;
+            box-shadow: 0 15px 20px rgba(74, 144, 226, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .button-text:active {
+            transform: translateY(2px);
+            box-shadow: 0 5px 10px rgba(74, 144, 226, 0.2);
+        }
+       
+        .AboutSection {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin: 140px 0;
+          height: 110vh;
+        }
+        .AboutSection > div {
+          width: 30%;
+        }
+        .AboutSection h2 {
+          font-size: 2.5rem; /* Adjust the size as needed */
+          color: white; /* Choose a color that suits the design */
+          margin: auto; /* Add space below the heading */
+          max-width: 80vw;
+        }
+
+        .leftSection {
+          font-size: 2rem;
+        }
+        .rightSection img {
+          width: 80%;
+          border-radius: 60%;
+        }
+        .text-blue {
+          color: rgb(13, 116, 201);
+        }
+        .text-gray {
+          color: gray;
+        }
+        #element {
+          color: rgb(13, 116, 201);
+        }
+        .EducationSection {
+          max-width: 80vw;
+          margin: auto;
+          height: 90vh;
+        }
+        .EducationSection h1 {
+          font-size: 2.2rem;
+        }
+        .EducationSection .box {
+          background: white;
+          width: auto;
+          height: 2px;
+          margin: 86px 0;
+          display:flex;
+        }
+        .EducationSection .vertical {
+          height: 158px;
+          width: 1px;
+          background-color: white;
+          margin: 0 250px;
+        }
+        .vertical-title {
+          font-size: 15px;
+          position: relative;
+          top: 10px;
+          width: 20vw;
+        }
+        .vertical-desc {
+          position: relative;
+          top: 90px;
+          color: gray;
+          width: 350px;
+          font-size: 15px;
+        }
+        footer{
+          text-align: center;
+          background-color: #0e0e1a;
+        }
+        .footer{
+          display: flex;
+          padding:23px 123px;
+          justify-content: space-evenly;
+        }
+        .footer ul{
+          list-style:none;
+          display: flex;
+        }
+        footer ul li{
+          margin:0 23px;
+        } 
+        footer ul li a{
+          text-decoration: none;
+          color: white;
+        } 
+        footer ul li a:hover{
+          color:aqua;
+        }
+
+        .footer div>{
+          width:223px;
+        }
+        footer .footer-rights{
+          text-align: center;
+          color: gray;
+          padding: 12px 0;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <a href="#home">Ateev Mallick</a></div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="HomeSection" id="home">
+        <div class="button">
+          <a href="DemoResume.pdf" class="button-text">Resume</a>
+          <a href="https://github.com/MallickAteev" class="button-text">Github</a>
+        </div>
+      </section>
+      <hr />
+      <section class="AboutSection" id="about">
+        <div class="leftSection">
+          <h2>About Me:</h2>
+          Hi, I'm <span class="text-blue">Ateev Mallick</span>
+          <div>and I am a 2<sup>nd</sup> year</div>
+          <div>Electrical Engineering Undergrad</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="ateev.bg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="EducationSection" id="edu">
+        <span class="text-gray">Journey</span>
+        <h1>Education</h1>
+        <div class="box">
+          <div class="vertical">
+            <div class="vertical-title">
+              Secondary Education(2019)<br />New English Secondary Boarding
+              School<br />4.0/4.0 GPA
+            </div>
+            <div class="vertical-desc">
+              "I completed my secondary education at New English Secondary
+              Boarding School, located in Janakpurdham, Nepal, up to class 10.
+              During my time there, I gained valuable knowledge and actively
+              participated in various activities. Notably, I took part in a
+              project exhibition, where I showcased a projector I built using a
+              magnifying glass and inverted lens mechanism. I also achieved
+              excellent academic results, excelling in my studies."
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">
+              Higher Education(2020-2022)<br />Physical Science with Computer
+              Science<br />Mithila Institute of Technology<br />11th:3.75/4<br />12th:3.45/4
+            </div>
+            <div class="vertical-desc">
+              "In my higher studies, I gained in-depth knowledge of Physics,
+              Chemistry, and Mathematics. Additionally, I chose Computer Science
+              as my optional subject, where I developed valuable skills such as
+              HTML, CSS, and JavaScript for frontend development, and PHP for
+              backend programming. I also learned about various computer
+              architectures and the C programming language. I actively
+              participated in Physics and Mathematics Olympiads and took part in
+              various projects, such as a website development competition. I
+              consistently performed at the top of my class, excelling among my
+              peers."
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="vertical-title">
+              Undergraduate(2023-2027)<br />
+              Electrical Engineering<br />
+              Institute of Engineering, Pulchowk Campus
+            </div>
+            <div class="vertical-desc">
+              "Activities and societies: Locus presents Energy Hackathon 7.0
+              Finalist, presented APFC(Automatic Power Factor Correction)
+              Device."<br />
+              "Appointed as a designer in Creative Team in PDSC(Plan, Design,
+              Solve, Create)"<br />
+              "Appointed as a designer in Creative Designer in LOCUS.<br />
+              Hardware Fellowships."<br />
+              "Home Electrification."<br />
+              "LaTex Workshop"
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+<h3>Ateev Mallick</h3>
+        </div>
+        <div class="footer-second"></div>
+          <ul>
+            <li><a href="https://www.facebook.com/567317leutarus">Facebook</a></li>
+            <li><a href="https://www.instagram.com/mlkateev">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/ateev-m-6196aa256/">Linkedin</a></li>
+            <li><a href="https://github.com/MallickAteev">Github</a></li>
+            <li><a href="https://www.teacheron.com/tutor/6h6O">Teacheron</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class ="footer-rights">
+          Copyright &#169; www.ateevmallick.com.np|All rights reserved
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Data Science",
+          "&amp; Machine Learning Enthusiast..",
+          "Plus A Graphics Designer",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
